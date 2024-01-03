@@ -1,0 +1,17 @@
+//to find the nearest power of 2 for a given number
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a=11;
+    int b=ceil(log2(a));//it finds the number of bits required for the representation of the number.
+    int low2power=1<<(b-1);
+    int greater2power=1<<b;
+    cout<<low2power<<endl;
+    cout<<greater2power;
+}
+
+
+//result
+8
+16
