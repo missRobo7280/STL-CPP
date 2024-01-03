@@ -22,3 +22,11 @@ int main()
     cout<<__builtin_popcount(a);//number of set bits
     cout<<__builtin_parity(a)<<endl;//to know if the count of set bits is even or odd
 }
+
+
+//output
+00000000000000000000000000001010
+28
+1
+2
+0
