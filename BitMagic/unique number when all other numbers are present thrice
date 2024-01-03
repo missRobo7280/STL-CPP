@@ -1,0 +1,27 @@
+//to find the unique number whhen all other numbers are repeated thrice
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    int ans=0;
+    for(int i=0;i<32;i++)
+    {
+        
+        int  ones_cnt=0;
+        int x=1<<i;
+        for(int j=0;j<n;j++)
+        {
+            if((a[j]&x)!=0)
+            ones_cnt++;
+        }
+        if((ones_cnt%3)!=0)
+        ans=ans|x;
+    }
+    cout<<ans;
+}
